@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="219.0" prefWidth="407.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ImprimirController">
+   <children>
+      <Separator layoutX="1.0" layoutY="156.0" prefHeight="6.0" prefWidth="415.0" />
+      <Button fx:id="fecharButton" layoutX="185.0" layoutY="170.0" mnemonicParsing="false" onAction="#fecharJanela" prefHeight="36.0" prefWidth="90.0" text="Fechar" />
+      <Button fx:id="imprimirButton" layoutX="285.0" layoutY="170.0" mnemonicParsing="false" onAction="#imprimirDocumento" prefHeight="36.0" prefWidth="90.0" text="Imprimir" />
+      <CheckBox fx:id="sapCheckBox" layoutX="56.0" layoutY="72.0" mnemonicParsing="false" text="Imprimir SAP:" />
+      <CheckBox fx:id="requisicaoCheckBox" layoutX="56.0" layoutY="117.0" mnemonicParsing="false" text="Imprimir Requisição:" />
+      <ComboBox fx:id="sapComboBox" layoutX="195.0" layoutY="69.0" prefHeight="25.0" prefWidth="181.0" />
+      <ComboBox fx:id="requisicaoComboBox" layoutX="194.0" layoutY="114.0" prefHeight="25.0" prefWidth="181.0" />
+   </children>
+</AnchorPane>

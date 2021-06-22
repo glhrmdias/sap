@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="260.0" prefWidth="495.0" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NaturezaDespesaController">
+   <children>
+      <Label layoutX="56.0" layoutY="52.0" text="Código Despesa" />
+      <TextField fx:id="codigoDespesaTextField" layoutX="150.0" layoutY="48.0" prefHeight="22.0" prefWidth="280.0" />
+      <Label layoutX="87.0" layoutY="88.0" text="Descrição" />
+      <TextArea fx:id="descricaoTextArea" layoutX="150.0" layoutY="88.0" prefHeight="59.0" prefWidth="280.0" />
+      <Label layoutX="51.0" layoutY="162.0" text="Grupo Financeiro" />
+      <ComboBox fx:id="grupoFinanceiroComboBox" layoutX="150.0" layoutY="158.0" prefHeight="25.0" prefWidth="280.0" />
+      <Separator layoutY="197.0" prefHeight="6.0" prefWidth="503.0" />
+      <Button fx:id="fecharButton" layoutX="231.0" layoutY="210.0" mnemonicParsing="false" onAction="#fecharJanela" prefHeight="36.0" prefWidth="90.0" text="Fechar" />
+      <Button fx:id="cadastrarButton" layoutX="330.0" layoutY="210.0" mnemonicParsing="false" onAction="#cadastrarNaturezaDespesa" prefHeight="36.0" prefWidth="102.0" text="Cadastrar" />
+   </children>
+</AnchorPane>
